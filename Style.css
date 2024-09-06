@@ -1,0 +1,124 @@
+/* .................. Navigation section ................ */
+/* Main Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #05696b;
+  padding: 1em;
+  text-align: center;
+}
+
+.logoimg {
+  width: 79px;
+  height: 79px;
+  margin: 0 auto;
+}
+
+/* Navigation Styles */
+
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #058789;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #ffff;
+}
+
+.active {
+  color: #010101;
+}
+
+/* Dropdown Styles */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffff;
+  min-width: 156px;
+}
+
+.dropdown-content a {
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  min-width: 156px;
+}
+
+.dropdown-content a:hover {
+  background-color: #058789;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 0 10px 0 30px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* ............. Footer bar .............. */
+
+#footer {
+  background-color: #05696b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+/* email */
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #0707079d;
+}
+
+/* Responsive Footer */
+
+@media screen and (max-width: 768px) {
+  #footer {
+    padding: 10px;
+  }
+}

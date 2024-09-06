@@ -1,0 +1,72 @@
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 4px #05696b;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#medicine-categories ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+#medicine-categories li {
+  margin-bottom: 10px;
+}
+
+#order-form li {
+  list-style: none;
+}
+
+#order-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#order-form div {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#order-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#order-table th,
+#order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#order-table th {
+  background-color: #f0f0f0;
+}
+
+#total-price {
+  font-weight: bold;
+}
+
+button {
+  background-color: #05696b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+button:hover {
+  background-color: #05696b9d;
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="Images/OakwoodGeneralHospitalLogo.webp"
+      type="IMAGES"
+    />
+    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharmacy Page</title>
+    <link rel="stylesheet" href="Index.css" />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Nav bar-->
+      <nav>
+        <div>
+          <img
+            class="logoimg"
+            src="Images/OakwoodGeneralHospitalLogo.webp"
+            alt="noimage"
+          />
+        </div>
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About us page.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="Services page.html" class="dropbtn"
+              >Services provided <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="Consulting reservation page.html"
+                  >Consulting reservation</a
+                >
+              </li>
+              <li><a href="Doctors.html">Doctors</a></li>
+              <li><a class="active" href="Index.html">Pharmacy</a></li>
+              <li>
+                <a href="Patient registration.html">Patient registration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Body-->
+
+    <!-- Medicine categories -->
+    <section id="medicine-categories">
+      <h2>Medicine Categories</h2>
+      <ul>
+        <li><a href="#analgesics">Analgesics</a></li>
+        <p>Used to relieve pain.</p>
+        <br />
+
+        <li><a href="#antibiotics">Antibiotics</a></li>
+        <p>Used to treat bacterial infections.</p>
+        <br />
+
+        <li><a href="#antidepressants">Antidepressants</a></li>
+        <p>Used to treat depression and other mood disorders.</p>
+        <br />
+
+        <li><a href="#antihistamines">Antihistamines</a></li>
+        <p>
+          Used to treat allergies and relieve symptoms like sneezing, runny
+          nose, and itchy eyes.
+        </p>
+        <br />
+
+        <li><a href="#antihypertensives">Antihypertensives</a></li>
+        <p>Used to lower blood prssure.</p>
+      </ul>
+    </section>
+
+    <!-- Form elements to add medicines to the order -->
+    <section id="order-form">
+      <h2>Add Medicines to Order</h2>
+      <form id="order-form">
+        <!-- Form fields for each medicine category -->
+        <div id="analgesics">
+          <label>Analgesics:</label>
+          <ul>
+            <li>
+              <label for="panadol">Panadol (10 tablets - Rs. 100)</label>
+              <input
+                type="number"
+                id="panadol-quantity"
+                name="panadol-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="panadol" onclick="addtoorder('panadol',100)">Add to Order</button>
+            </li>
+            <li>
+              <label for="paracetomal"
+                >Paracetomal (10 tablets - Rs. 100)</label
+              >
+              <input
+                type="number"
+                id="paracetomal-quantity"
+                name="paracetomal-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="paracetomal" onclick="addtoorder('paracetomal',100)">Add to Order</button>
+            </li>
+            <li>
+              <label for="aspirin">Aspirin (10 tablets - Rs. 100)</label>
+              <input
+                type="number"
+                id="aspirin-quantity"
+                name="aspirin-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="aspirin" onclick="addtoorder('aspirin', 100)">Add to Order</button>
+            </li>
+            <li>
+              <label for="tylenol">Tylenol (10 tablets - Rs. 100)</label>
+              <input
+                type="number"
+                id="tylenol-quantity"
+                name="tylenol-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="tylenol" onclick="addtoorder('tylenol', 100)">Add to Order</button>
+            </li>
+            <li>
+              <label for="naproxen">Naproxen (10 tablets - Rs. 100)</label>
+              <input
+                type="number"
+                id="naproxen-quantity"
+                name="naproxen-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="naproxen" onclick="addtoorder('naproxen', 100)">Add to Order</button>
+            </li>
+            <li>
+              <label for="excederine">Excederine (10 tablets - Rs. 100)</label>
+              <input
+                type="number"
+                id="excederine-quantity"
+                name="excederine-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="excederine" onclick="addtoorder('excederine', 50)">Add to Order</button>
+            </li>
+          </ul>
+        </div>
+        <div id="antibiotics">
+          <label>Antibiotics:</label>
+          <ul>
+            <li>
+              <label for="amoxicillin">Amoxicillin (5 tablets - Rs. 50)</label>
+              <input
+                type="number"
+                id="amoxicillin-quantity"
+                name="amoxicillin-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="amoxicillin" onclick="addtoorder('amoxicillin', 50)">Add to Order</button>
+            </li>
+            <li>
+              <label for="azithromycin"
+                >Azithromycin (5 tablets - Rs. 50)</label
+              >
+              <input
+                type="number"
+                id="azithromycin-quantity"
+                name="azithromycin-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="azithromycin" onclick="addtoorder('azithromycin', 50)">Add to Order</button>
+            </li>
+            <li>
+              <label for="ciprofloxacin"
+                >Ciprofloxacin (5 tablets - Rs. 50)</label
+              >
+              <input
+                type="number"
+                id="ciprofloxacin-quantity"
+                name="ciprofloxacin-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="ciprofloxacin" onclick="addtoorder('ciprofloxacin', 50)">Add to Order</button>
+            </li>
+            <li>
+              <label for="bacitracin">Bacitracin (5 tablets - Rs. 50)</label>
+              <input
+                type="number"
+                id="bacitracin-quantity"
+                name="bacitracin-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="bacitracin" onclick="addtoorder('bacitracin', 50)">Add to Order</button>
+            </li>
+            <li>
+              <label for="polymyxin-b">Polymyxin B (5 tablets - Rs. 50)</label>
+              <input
+                type="number"
+                id="polymyxin-b-quantity"
+                name="polymyxin-b-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="polymyxin-b" onclick="addtoorder('polymyxin-b', 50)">Add to Order</button>
+            </li>
+            <li>
+              <label for="tetracycline"
+                >Tetracycline (5 tablets - Rs. 50)</label
+              >
+              <input
+                type="number"
+                id="tetracycline-quantity"
+                name="tetracycline-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="tetracycline" onclick="addtoorder('tetracycline', 75)">Add to Order</button>
+            </li>
+          </ul>
+        </div>
+        <div id="antidepressants">
+          <label>Antidepressants:</label>
+          <ul>
+            <li>
+              <label for="prozac">Prozac (5 tablets - Rs. 75)</label>
+              <input
+                type="number"
+                id="prozac-quantity"
+                name="prozac-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="prozac" onclick="addtoorder('prozac', 75)">Add to Order</button>
+            </li>
+            <li>
+              <label for="zoloft">Zoloft (5 tablets - Rs. 75)</label>
+              <input
+                type="number"
+                id="zoloft-quantity"
+                name="zoloft-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="zoloft" onclick="addtoorder('zoloft', 75)">Add to Order</button>
+            </li>
+            <li>
+              <label for="paxil">Paxil (5 tablets - Rs. 75)</label>
+              <input
+                type="number"
+                id="paxil-quantity"
+                name="paxil-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="paxil" onclick="addtoorder('paxil', 75)">Add to Order</button>
+            </li>
+            <li>
+              <label for="celexa">Celexa (5 tablets - Rs. 75)</label>
+              <input
+                type="number"
+                id="celexa-quantity"
+                name="celexa-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="celexa" onclick="addtoorder('celexa', 75)">Add to Order</button>
+            </li>
+            <li>
+              <label for="lexapro">Lexapro (5 tablets - Rs. 75)</label>
+              <input
+                type="number"
+                id="lexapro-quantity"
+                name="lexapro-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="lexapro" onclick="addtoorder('lexapro', 150)">Add to Order</button>
+            </li>
+          </ul>
+        </div>
+        <div id="antihistamines">
+          <label>Antihistamines:</label>
+          <ul>
+            <li>
+              <label for="allegra">Allegra (6 tablets - Rs. 150)</label>
+              <input
+                type="number"
+                id="allegra-quantity"
+                name="allegra-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="allegra" onclick="addtoorder('allegra', 150)">Add to Order</button>
+            </li>
+            <li>
+              <label for="benadryl">Benadryl (6 tablets - Rs. 150)</label>
+              <input
+                type="number"
+                id="benadryl-quantity"
+                name="benadryl-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="benadryl" onclick="addtoorder('benadryl', 150)">Add to Order</button>
+            </li>
+            <li>
+              <label for="claritin">Claritin (6 tablets - Rs. 150)</label>
+              <input
+                type="number"
+                id="claritin-quantity"
+                name="claritin-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="claritin" onclick="addtoorder('claritin', 150)">Add to Order</button>
+            </li>
+            <li>
+              <label for="sudafed">Sudafed (6 tablets - Rs. 150)</label>
+              <input
+                type="number"
+                id="sudafed-quantity"
+                name="sudafed-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="sudafed" onclick="addtoorder('sudafed', 150)">Add to Order</button>
+            </li>
+            <li>
+              <label for="afrin">Afrin (6 tablets - Rs. 150)</label>
+              <input
+                type="number"
+                id="afrin-quantity"
+                name="afrin-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="afrin" onclick="addtoorder('afrin', 150)">Add to Order</button>
+            </li>
+            <li>
+              <label for="nasacort">Nasacort (6 tablets - Rs. 150)</label>
+              <input
+                type="number"
+                id="nasacort-quantity"
+                name="nasacort-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="nasacort" onclick="addtoorder('nasacort', 150)">Add to Order</button>
+            </li>
+            <li>
+              <label for="flonase">Flonase (6 tablets - Rs. 150)</label>
+              <input
+                type="number"
+                id="flonase-quantity"
+                name="flonase-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="flonase" onclick="addtoorder('flonase', 150)">Add to Order</button>
+            </li>
+          </ul>
+        </div>
+        <div id="antihypertensives">
+          <label>Antihypertensives:</label>
+          <ul>
+            <li>
+              <label for="lisinopril">Lisinopril (5 tablets - Rs. 200)</label>
+              <input
+                type="number"
+                id="lisinopril-quantity"
+                name="lisinopril-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="lisinopril" onclick="addtoorder('lisinopril', 200)">Add to Order</button>
+            </li>
+            <li>
+              <label for="metoprolol">Metoprolol (5 tablets - Rs. 200)</label>
+              <input
+                type="number"
+                id="metoprolol-quantity"
+                name="metoprolol-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="metoprolol" onclick="addtoorder('metoprolol', 200)">Add to Order</button>
+            </li>
+            <li>
+              <label for="losartan">Losartan (5 tablets - Rs. 200)</label>
+              <input
+                type="number"
+                id="losartan-quantity"
+                name="losartan-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="losartan" onclick="addtoorder('losartan', 200)">Add to Order</button>
+            </li>
+            <li>
+              <label for="valsartan">Valsartan (5 tablets - Rs. 200)</label>
+              <input
+                type="number"
+                id="valsartan-quantity"
+                name="valsartan-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="valsartan" onclick="addtoorder('valsartan', 200)">Add to Order</button>
+            </li>
+            <li>
+              <label for="amlodipine">Amlodipine (5 tablets - Rs. 200)</label>
+              <input
+                type="number"
+                id="amlodipine-quantity"
+                name="amlodipine-quantity"
+                placeholder="Quantity"
+                value="0"
+              />
+              <button type="button" id="amlodipine" onclick="addtoorder('amlodipine', 200)">Add to Order</button>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </section>
+
+    <!-- Table to display the current order and total price -->
+    <section id="order-table">
+      <h2>Current Order</h2>
+      <table id="order-table">
+        <thead>
+          <tr>
+            <th>Medicine</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="order-table-body">
+          <!-- Table rows will be generated dynamically -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total:</td>
+            <td id="total-price">$0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- "Buy Now" button -->
+    <a href="Order.html"><button id="buy-now">Buy Now</button></a>
+
+    <!-- "Add to Favourites" and "Apply Favourites" buttons -->
+    <button id="add-to-favourites" onclick="favoriteadd()">Add to Favourites</button>
+    <button id="apply-favourites" onclick="retrivefromFavorite()">Apply Favourites</button>
+
+    <!-- Footer bar-->
+    <footer id="footer">
+      <section id="contact-info">
+        <h3>Contact Us</h3>
+        <p>
+          Oakwood General Hospital<br />
+          145 Town Hall, Union Place, Maradana<br />
+          Phone: 011-578-6758<br />
+          Fax: 567-567-3424<br />
+          Email:
+          <a href="mailto:oakwoodgeneralhospital@145gmail.com"
+            >oakwoodgeneralhospital@145gmail.com</a
+          >
+        </p>
+      </section>
+    </footer>
+    
+  </body>
+</html>
